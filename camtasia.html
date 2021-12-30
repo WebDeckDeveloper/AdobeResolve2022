@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\main.css">
+    <title>Adobe Resolve</title>
+</head>
+<body class="camtasia">
+    <h2>Techsmith Camtasia : Overview</h2>
+    <p>Camtasia ( /kæmˈteɪʒə/; formerly Camtasia Studio) is a software suite, created and published by
+         TechSmith, for creating and recording video tutorials and presentations directly via screencast,
+          or via a direct recording plug-in to Microsoft PowerPoint. Audio or other multimedia recordings
+           may be recorded at the same time or added separately from another source.</p>
+
+    <h2>Techsmith Camtasia : Version History</h2>
+    <div class="article-meta">
+        <!-- <div class="author-avatar">
+          <img src="https://support.techsmith.com/system/photos/145153296/4TH_OF_JULY_2014_0132.png" alt="Avatar"/>
+        </div> -->
+        <dl class="article-description">
+          
+          <dt>Last Updated:</dt>
+            <dd><time datetime="2021-12-08T14:06:54Z" title="2021-12-08 19:36" data-datetime="calendar">December 08, 2021 19:36</time></dd>
+        </dl>
+      </div>
+    <div class="panel-body">
+        <h3>8 December, 2021: Camtasia (Windows) 2021.0.15</h3>
+        <ul>
+        <li>Fixed a crash that could occur when changing Clip Speed in a locale that uses commas as decimal separators.</li>
+        <li>Fixed a crash that could occur when pressing the New Project keyboard shortcut many times in succession.</li>
+        <li>Fixed a bug that could cause Device Frames to be missing from thumbnail images.</li>
+        <li>Fixed a bug that could prevent seeking through media while previewing from the Media Bin or Library.</li>
+        </ul>
+        <h3>29 November, 2021: Camtasia (Windows) 2021.0.14</h3>
+        <ul>
+        <li>Fixed a memory leak that could cause Camtasia to become unresponsive after multiple mp4s were rendered using hardware acceleration.</li>
+        <li>Fixed a bug that caused thumbnails for ProRes MOV files to render incorrectly.</li>
+        <li>Communication between the Fuse mobile client and Camtasia now utilizes Transport Layer Security (TLS). Thanks to nerdwell for reporting.</li>
+        </ul>
+        <h3>16 November, 2021: Camtasia (Windows) 2021.0.13</h3>
+        <ul>
+        <li>Added localized text for the Panopto output.</li>
+        <li>Fixed a bug that could cause Device Frames to extend past the end of a media after a split.</li>
+        <li>Fixed a bug that could cause erroneous text callout attributes to change when inserting a line break.</li>
+        <li>Fixed a bug that could cause media to be added out of order when multiple media were added to the timeline from the Media Bin.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a crash that could occur when adding .trec files with multi-byte characters in the filename.</li>
+        <li>Fixed a crash that could occur when editing Clip Speed on machines that use commas as decimal separators.</li>
+        </ul>
+        <h3>12 October, 2021: Camtasia (Windows) 2021.0.12</h3>
+        <ul>
+        <li>Added option to Recorder: Camera recording dimensions.</li>
+        <li>Added option to Recorder: Camera target capture frame rate.</li>
+        <li>Added an option not to install WebView2 when doing enterprise installs if a beta version is already installed.</li>
+        <li>Fixed a bug that could cause Undo history to be corrupted when interrupting a mouse movement.</li>
+        <li>Fixed a bug that could cause media to be copied when saving a standalone project as a new project that is not standalone.</li>
+        <li>Fixed a bug that could prevent the Zoom-n-Pan preview from updating correctly.</li>
+        <li>Fixed a bug that caused date sorting in the Media Bin to sort in reverse order.</li>
+        <li>Fixed a bug to disallow characters in Theme names that could lead to a crash.</li>
+        <li>Fixed a bug that could cause the stitch to be off by a frame when extending media with Clip Speed applied.</li>
+        <li>Fixed a bug that could cause the editing caret to be invisible when editing text annotations.</li>
+        <li>Fixed a bug that could cause an error when adjusting a media's clip speed on a magnetic track.</li>
+        <li>Fixed a bug that could cause Recorder preferences to be unavailable if Camtasia cannot access the camera.</li>
+        <li style="box-sizing: border-box; margin-top: 0.25em;">Fixed a bug that could cause an entire media to be silenced when silencing a selection.</li>
+        </ul>
+        <h3>20 September, 2021: Camtasia (Windows) 2021.0.11</h3>
+        <ul>
+        <li>Improved error handling when uploading to Panopto with Viewer-only access.</li>
+        <li>Fixed a bug that could cause some exported mp4s to play back at an incorrect size in some players.</li>
+        <li>Fixed a bug that prevented media on locked tracks from being added to Library assets.</li>
+        <li>Fixed a bug that could cause waveforms to be drawn incorrectly when extending media.</li>
+        </ul>
+        <h3>16 September, 2021: Camtasia (Windows) 2021.0.10</h3>
+        <ul>
+        <li>Added licensing support for proxy strings in the registry that include scheme.</li>
+        <li>Fixed a bug that could prevent media with filenames containing multibyte characters from being imported.</li>
+        <li>Fixed a bug that could cause an incorrect window to gain focus when the canvas is detached.</li>
+        <li>Fixed a bug that could prevent presentations from being exported to Knowmia.</li>
+        </ul>
+        <h3>14 September, 2021: Camtasia (Windows) 2021.0.9</h3>
+        <ul>
+        <li>Added option to Recorder: Customize shortcuts for Record/Pause/Resume and Stop.</li>
+        <li>Added option to Recorder: Choose maximum capture frame rate.</li>
+        <li>Added option to Recorder: Choose recording encoder.</li>
+        <li>Recorder preferences are now set to factory defaults alongside the Editor when users select this option in Advanced Preferences.</li>
+        <li>Uninstallation is now blocked if the Recorder is still running.</li>
+        <li>Improved crash handling when a user's license info is corrupted.</li>
+        <li>Fixed a crash that could occur when previewing media in the Media Bin.</li>
+        <li>Fixed a crash that could occur when opening a project.</li>
+        <li>Fixed a crash that could occur when importing media.</li>
+        <li>Fixed a crash that could occur when adding media to the timeline.</li>
+        <li>Fixed a bug that could cause animations to render incorrectly on annotation tails.</li>
+        <li>Fixed a bug that could cause a single Undo command to process more Undo actions than intended.</li>
+        <li>Fixed a bug that prevented fragmented mp4s from being proxied.</li>
+        <li>Fixed a bug that could cause fragmented mp4s to render intermittent black frames.</li>
+        </ul>
+        <h3>25 August, 2021: Camtasia (Windows) 2021.0.8</h3>
+        <ul>
+        <li>Fixed a startup crash that could occur when updating cached user credentials.</li>
+        </ul>
+        <h3>24 August, 2021: Camtasia (Windows) 2021.0.7</h3>
+        <ul>
+        <li>Added option to export to Panopto in Camtasia Editor.</li>
+        <li>"Do not capture recorder on screen" option is no longer available on Windows versions that are too old to support it.</li>
+        <li>Fixed a bug that allowed users to add Noise Removal to Groups where it has no effect.</li>
+        <li>Fixed a bug that could cause Sketch Motion annotations to work incorrectly when saved as presets.</li>
+        <li>Fixed a crash that could occur after exporting a video.</li>
+        <li>Fixed a bug that could cause proxy videos to have poor sync from some MP4 sources.</li>
+        </ul>
+        <h3>3 August, 2021: Camtasia (Windows) 2021.0.6</h3>
+        <ul>
+        <li>Media Width and Height are now accurate to one decimal place in the Properties panel.</li>
+        <li>Added support for Motion JPEG MOV files.</li>
+        <li>Improved startup handling when WebView2 component is not installed.</li>
+        <li>Removed add-in support for 32-bit Powerpoint.</li>
+        <li>Fixed a bug that could cause a color shift when exporting to MP4.</li>
+        <li>Fixed a bug that could cause reduced performance in large projects.</li>
+        <li>Improved error handling when Camtasia cannot launch due to missing or corrupted dll files.</li>
+        <li>Fixed a crash that could occur when nesting media using Noise Removal.</li>
+        <li>Fixed a crash that could occur when using Zoom-n-Pan.</li>
+        <li>Fixed a crash that could occur when declining to recover a recording.</li>
+        <li>Fixed a bug that could lead to too many undo points when editing annotations.</li>
+        <li>Fixed a bug that could lead to too many undo points when editing multiple objects with Behaviors.</li>
+        <li>Fixed a bug that prevented LUT files from being imported in German Camtasia installations.</li>
+        <li>Fixed a bug that ignored some plugin preferences during enterprise deployments.</li>
+        <li>Fixed a bug that caused a proxy badge to be incorrectly shown on keystroke callouts.</li>
+        </ul>
+        <h3>30 June, 2021: Camtasia (Windows) 2021.0.5</h3>
+        <ul>
+        <li>Added 3d LUT Visual Effect.</li>
+        <li>Source file names are now truncated in standalone projects if they would have been too long to save.</li>
+        <li>Added option to Recorder: Show countdown before recording.</li>
+        <li>Added option to Recorder: Omit recorder from recordings.</li>
+        <li>Added option to Recorder: Restore cursor location after pause.</li>
+        <li>Added option to Recorder: Exit recorder after recording is stopped.</li>
+        <li>Improved text navigation while typing in Annotations.</li>
+        <li>Added indicator to About dialog when Camtasia is using Scalable Offline Activation.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a crash that could occur when importing a media.</li>
+        <li>Fixed a crash that could occur when deleting tools from the Tool panel.</li>
+        <li>Fixed a bug that could cause multiple undo points for a single scaling action.</li>
+        <li>Fixed a bug that could cause a horizontal scrollbar in the Properties panel.</li>
+        <li>Fixed a bug that could cause recordings to be lost if an error happened during recording.</li>
+        <li>Fixed a bug that could cause auto-normalization settings to be ignored when using Ripple Delete.</li>
+        <li>Fixed a bug that caused the Recorder to enter a bad state if closed while recording.</li>
+        </ul>
+        <h3>9 June, 2021: Camtasia (Windows) 2021.0.4</h3>
+        <ul>
+        <li>Fixed a bug that caused the Recorder to lose its most recent setting for recording dimensions.</li>
+        <li>Fixed a bug that could cause an erroneous signin message to show on launch.</li>
+        <li>Fixed a bug that could cause the first one or two frames of a recording to be dim.</li>
+        <li>Fixed a crash that could occur when importing mp4s with no audio streams.</li>
+        <li>Fixed a startup crash that could occur if Camtasia was unable to access environment information.</li>
+        </ul>
+        <h3>27 May, 2021: Camtasia (Windows) 2021.0.3</h3>
+        <ul>
+        <li>Fixed a bug that could prevent users from signing in to start a trial.</li>
+        </ul>
+        <h3>26 May, 2021: Camtasia (Windows) 2021.0.2</h3>
+        <ul>
+        <li>Added option to the Recorder that allows users to select a default save location.</li>
+        <li>Added save option to the Recorder that allows users the option to choose a file name.</li>
+        <li>Reduced minimum track height in the Editor.</li>
+        <li>Added menu option and keyboard shortcut to center canvas.</li>
+        <li>Added an option to enable/disable font ligatures in the Properties panel.</li>
+        <li>Improved accuracy of effect thumbnails when creating user presets of the Corner Rounding visual effect.</li>
+        <li>Fixed tab order in the Quick Property Editor.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a crash that could occur when scrolling the mouse wheel during startup.</li>
+        <li>Fixed a crash that could occur while saving a project.</li>
+        <li>Fixed a crash that could occur when sending a new recording from Recorder to Editor</li>
+        <li>Fixed a bug that stopped playback when playing proxy files if the source was an .MTS file or a Lottie file.</li>
+        <li>Fixed a bug that could prevent some valid files from being proxied.</li>
+        <li>Fixed a bug that prevented the Duration prompt from being displayed when extending media.</li>
+        <li>Fixed a bug that could prevent users from entering their license key.</li>
+        <li>Fixed a bug that prevented media from being extended when they contained a transition.</li>
+        <li>Fixed a bug that could cause a misleading duration to be displayed in the Recorder when making long recordings.</li>
+        <li>Fixed a bug that could cause deleted user presets to return after restarting Camtasia.</li>
+        <li>Fixed a bug that could cause the screen to be recorded when it was not selected.</li>
+        <li>Fixed a bug that could cause a drop in frame rate when Transitions are extended.</li>
+        <li>Fixed a bug that could cause duplicate audio media when importing from Audiate.</li>
+        </ul>
+        <h3>29 April, 2021: Camtasia (Windows) 2021.0.1</h3>
+        <ul>
+        <li>Added Recorder Shortcuts: F9 for Start/Pause/Resume Recording, and F10 to Stop Recording.</li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Added a larger webcam preview that can be displayed while recording.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Added a countdown that is shown before recordings start.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Improved Recorder UI during recordings.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Pressing Record inside the Editor will now foreground the Recorder if it has been minimized.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Hovering over Media Matte options now previews those changes on the Canvas.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Hovering over media in the Media Bin now allows you to scrub through the media.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Added Delete All Proxy Videos as an option on the Advanced Preferences menu.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Added support for activation using a proxy server.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Groups within Groups are now automatically named with their parent group as a prefix.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Added support for renaming Group Tabs by double-clicking on the tab.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Audio waveforms are now drawn on Groups on the timeline to represent audio within the Group.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Adding a caption while in a Group Tab now adds it to that Group instead of the main timeline.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>The Zoom-N-Pan window now always shows the main timeline even if a Group Tab is being shown.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a user-reported startup crash.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that could lead images to be one frame in duration when replaced from the Media Bin.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that prevented .srt files from being exported when using Camtasia in Spanish.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that caused Ripple Insert to work incorrectly inside Group Tabs.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that caused webcam-only recordings to fail to drag when dragging to the Canvas from the Media Bin.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that caused the timeline to scroll upward when dragging the playhead.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed a bug that could lead Knowmia productions to have an incorrect duration.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed sorting order when sorting by Type in the Media Bin.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Fixed bug that could prevent signin if the system clock time differed from the authentication server.<br></span></span></span></li>
+        <li><span class="VIiyi" lang="de"><span class="JLqJ4b ChMk0b" data-language-for-alternatives="de" data-language-to-translate-into="en" data-phrase-index="0"><span>Localization fixes.</span></span></span></li>
+        </ul>
+        <h3>27 April, 2021: Camtasia (Windows) 2021.0.0</h3>
+        <ul>
+        <li>Added 75+ new Transitions and Transition categories</li>
+        <li>Added Audio Emphasize Audio Effect</li>
+        <li>Added VU Meter in editor</li>
+        <li>Added Motion Blur Visual Effect</li>
+        <li>Added Round Corners Visual Effect</li>
+        <li>Added Media Matte Visual Effect</li>
+        <li>Added ability to generate proxy videos for improved editing performance</li>
+        <li>Added Additional properties to Quick Property Assets</li>
+        <li>Added Quick Property Editor for creating custom Quick Property Assets</li>
+        <li>Added New Animation Shortcuts / Behaviors</li>
+        <li>Added support for Lottie animations</li>
+        <li>Added support for standalone projects</li>
+        <li>Added ability to collapse Property Panel elements</li>
+        <li>Added Visual Effects bypass toggle switch to the Property Panel</li>
+        <li>Added TechSmith Audiate integration</li>
+        <li>Added New Group workflow</li>
+        <li>Improved Canvas zooming / panning</li>
+        <li>New Welcome Window with project launcher and Learning Center</li>
+        <li>New and Improved Recorder UI</li>
+        </ul>
+        </div>
+    <div class="panel panel-default">
+        <h3>19 October, 2021: Camtasia (Windows) 2020.0.14</h3>
+        <ul>
+        <li>Authentication improvements. Users who share to TechSmith web services such as Screencast or Knowmia will be required to sign in again via an updated experience.</li>
+        <li>Fixed bug that caused timeline items to be mistakenly selected.</li>
+        </ul>
+        <h3>15 February, 2021: Camtasia (Windows) 2020.0.13</h3>
+        <ul>
+        <li>Added additional options to the TechSmith Smart Player</li>
+        <li>Removed the temporary track at the top of the timeline; a new track now appears when media is dragged to that location.</li>
+        <li>Added tooltip to Start Voice Narration button.</li>
+        <li>Admins can now remove Export destinations when using the Deployment Tool.</li>
+        <li>Startup crashes now give users more information about what led to the crash.</li>
+        <li>Fixed bug that caused projects exported to Knowmia to include project duration that included disabled tracks.</li>
+        <li>Fixed UI alignment in Behaviors Properties menu.</li>
+        <li>Fixed bug that could prevent Camtasia from detecting that an update was available.</li>
+        <li>Fixed bug that prevented a .trec file from being imported when the webcam had been in use by another application.</li>
+        <li>Fixed bug that could cause some media to be missing from productions when producing to Video Review or Knowmia.</li>
+        <li>Fixed crash that could occur when turning off auto-normalization.</li>
+        <li>Fixed bug that could cause captions to fail to import from Powerpoint</li>
+        <li>Fixed hang that could occur when playing the same media on the Canvas and the Media Bin preview at the same time.</li>
+        <li>Fixed bug that could prevent some valid mp4 files from being imported.</li>
+        <li>Fixed bug that could cause unexpected caption alignment.</li>
+        <li>Fixed bug that led to users' Event Logs being generated too often by logging.</li>
+        <li>Fixed bug that could prevent Quiz/Marker tray state from being remembered.</li>
+        <li>Fixed crash when double clicking in the recent project list in the Welcome Window.</li>
+        <li>Fixed bug that allowed marketing messages to appear during recordings.</li>
+        <li>Fixed bug that caused the canvas not to update when a color change is canceled.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a crash that could occur during production.</li>
+        <li>Fixed a crash that could occur if a user tried to make a thumbnail before Camtasia fully loaded.</li>
+        <li>Fixed a bug that could prevent Transitions' name from being shown when multiple media are selected.</li>
+        <li>Fixed a problem that could cause audio and video to become desynchronized when recording only a webcam and a microphone.</li>
+        <li>Fixed a bug that could cause Noise Reduction to behave in unexpected ways on stitched media.<br>Localization fixes.</li>
+        </ul>
+        <h3>23 November, 2020: Camtasia (Windows) 2020.0.12</h3>
+        <ul>
+        <li>Fixed bug that could lead to poor performance on complicated projects.</li>
+        </ul>
+        <h3>11 November, 2020: Camtasia (Windows) 2020.0.11</h3>
+        <ul>
+        <li>"Jump to next/previous animation" now considers all media on the timeline, not just selected media.</li>
+        <li>Added message informing users when they try to enter a license key that was not created correctly.</li>
+        <li>Improved startup performance.</li>
+        <li>When sharing to Knowmia the project name is now suggested as the production title.</li>
+        <li>Fixed a bug that prevented adding a media to the timeline when doing so would create more than one track.</li>
+        <li>Fixed a crash that could occur when opening or upgrading some projects.</li>
+        <li>Fixed a bug that would prevent animated cursors from macOS recordings from displaying correctly.</li>
+        <li>Fixed a bug that prevented files with incorrect audio channel metadata from loading into upgraded projects.</li>
+        <li>Fixed a hang that could occur when closing the application.</li>
+        <li>Fixed a bug that caused the preview scale to change when previewing Transitions.</li>
+        <li>Fixed a bug that caused the transition thumbnail to play the media preview when previewing a transition at the same time.</li>
+        </ul>
+        <h3>16 October, 2020: Camtasia (Windows) 2020.0.10</h3>
+        <ul>
+        <li>Fixed a user-reported startup crash that could occur when fonts were missing certain metadata.</li>
+        <li>Fixed a bug that caused Behavior preset previews to be empty in some scenarios.</li>
+        <li>The prompt for trial activation now respects monitor DPI correctly.</li>
+        <li>Fixed a bug that could prevent transparent ProRes videos from rendering correctly.</li>
+        </ul>
+        <h3>15 October, 2020: Camtasia (Windows) 2020.0.9</h3>
+        <ul>
+        <li>Added ability to set Width/Height of media in the Properties panel.</li>
+        <li>Pressing Play when at the end of the timeline will now move the playhead to the beginning of the view instead of the beginning of the project.</li>
+        <li>Improved user experience when recovering an auto-saved project.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a crash that could occur when extending a frame on videos with an audio stream longer than the video stream.</li>
+        <li>Fixed a crash that could occur when playing stitched audio media.</li>
+        <li>Fixed a bug that prevented Speech-to-Text from being launched.</li>
+        <li>Fixed a bug that caused some AVI files to look blurry when rendered.</li>
+        <li>Fixed a bug that allowed the empty track zone to be moved between tracks.</li>
+        <li>Fixed a bug that that caused transitions to be hidden after undoing a replace operation.</li>
+        <li>Fixed a bug that allowed timeline zooming to place the playhead out of view.</li>
+        <li>Fixed a bug that prevented some visual effects from being included when exporting a frame.</li>
+        <li>Fixed a bug that prevented old projects from upgrading when they included audio files with more than two channels.</li>
+        <li>Fixed a bug that prompted the user to close unrelated applications when installing or uninstalling Camtasia.</li>
+        <li>Fixed a bug that prevented users from using Elgato Wave 3 microphones.</li>
+        <li>Localization fixes.</li>
+        </ul>
+        </div>
+        <h3>3 September, 2020: Camtasia (Windows) 2020.0.8</h3>
+        <ul>
+        <li>Added capability in Editor to Add Exported Frame by right-clicking on the playhead.</li>
+        <li>Added clearer language informing users when licensing limits are reached.</li>
+        <li>Added clearer language informing users when Legacy Callouts are upgraded.</li>
+        <li>Renamed Share button and menu to Export in the Editor.</li>
+        <li>Added option to Export Smart Player files for hosting or use hosted Smart Player files.</li>
+        <li>Fixed an XML eXternal Entity (XXE) issue that could allow a remote attacker to destroy privileged files or -- in some environments -- elevate privileges through a maliciously crafted configuration file.</li>
+        <li>Fixed a crash that could occur when creating a Project from a Template twice in a row.</li>
+        <li>Fixed a crash that could intermittently occur when searching for the Documents folder.</li>
+        <li>Fixed a bug that prevented transitions from being deleted from media on the timeline.</li>
+        <li>Fixed a bug that stopped the timeline selection from collapsing after a cut.</li>
+        <li>Fixed a bug that prevented waveforms from updating correctly in some cases.</li>
+        <li>Fixed capitalization of French, Spanish, and Portuguese languages in the installer.</li>
+        </ul>
+        <h3>12 August, 2020: Camtasia (Windows) 2020.0.7</h3>
+        <ul>
+        <li>Added support for Spanish language.</li>
+        <li>Added support for Portuguese language.</li>
+        <li>Improved accessibility for screen readers.</li>
+        <li>Fixed a bug that prevented Track Matte indicators from moving when rearranging tracks.</li>
+        <li>Transition names are now sorted alphabetically in all languages.</li>
+        <li>Fixed bug that could make the Theme Manager appear at an incorrect size.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed bug that prevented users from retrying a failed uninstallation.</li>
+        <li>Fixed a bug that could leave undesired files on a user's file system after uninstallation.</li>
+        <li>Uninstall errors now display in the installation's selected language.</li>
+        <li>Fixed bug that could cause waveforms to display the incorrect amplitude after LUFS normalization.</li>
+        <li>Fixed bug that caused Media Details to show the wrong path after a Template was saved as a project.</li>
+        <li>Fixed bug that could cause Camtasia to ask for a license key when already authorized.</li>
+        <li>Fixed bug that could cause dragging of media into a Group to fail.</li>
+        <li>Fixed bug that could prevent the timeline from scrolling or zooming properly.</li>
+        <li>Fixed a crash when clicking on a callout with RTL text ending in a carriage return.</li>
+        <li>Localization fixes.</li>
+        </ul>
+        <h3>22 July, 2020: Camtasia (Windows) 2020.0.6</h3>
+        <ul>
+        <li>Added Track Solo feature to Editor.</li>
+        <li>Added capability for organizations' proxy servers to be used when contacting the TechSmith licensing servers.</li>
+        <li>Added improvements for high DPI monitors and multi-monitor mixed DPI scenarios.</li>
+        <li>Error conditions preventing installation will now display in the selected language.</li>
+        <li>It is now possible to paste Behaviors onto Groups.</li>
+        <li>Improved crash reporting.</li>
+        <li>Fixed bug that caused some webcams to exhibit poor sync between audio and video.</li>
+        <li>Fixed bug that caused some ProRes videos to render incorrectly.</li>
+        <li>Localization fixes.</li>
+        </ul>
+        <h3>29 June, 2020: Camtasia (Windows) 2020.0.5</h3>
+        <ul>
+        <li>Fixed a user-reported startup crash.</li>
+        <li>Fixed a bug where German trial users were unable to produce with a watermark.</li>
+        <li>Fixed a bug that could stop Select in Media Bin from scrolling to the correct media.</li>
+        </ul>
+        <h3>16 June, 2020: Camtasia (Windows) 2020.0.4</h3>
+        <ul>
+        <li>Added option to share to TechSmith Knowmia in Camtasia Editor.</li>
+        <li>Removed option to share to TechSmith Relay.</li>
+        <li>Modernized look and feel of the Help/About dialog.</li>
+        <li>Camtasia now allows users to enter a different license number when reinstalling.</li>
+        <li>Fixed a user-reported startup crash.</li>
+        </ul>
+        <h3>5 June, 2020: Camtasia (Windows) 2020.0.3</h3>
+        <ul>
+        <li>Added Track Reorder feature to Editor.</li>
+        <li>Fixed a crash that could occur using source media saved to OneDrive.</li>
+        <li>Fixed bug that prevented users from editing multiple animation keyframes simultaneously.</li>
+        <li>Fixed bug that prevented local SmartPlayer productions from displaying in fullscreen in IE11.</li>
+        <li>Fixed bug that prevented licensing messaging from appearing in some cases.</li>
+        <li>Camtasia now tries multiple times to reach the licensing service before prompting users to activate offline.</li>
+        <li>Fixed bug that prevented thumbnails from being shown in the Theme Manager and the Properties panel.</li>
+        <li>Fixed crash on import of a WMV file with no video stream.</li>
+        <li>Improved memory usage when creating new projects.</li>
+        <li>Files with a .tif or .tiff extension can now be added to a project.</li>
+        <li>Properties are no longer shown for Annotations when those properties do not apply.</li>
+        <li>Fixed problem that could prevent audio from being decoded from some source media.</li>
+        <li>Fixed problem that could prevent some MOV source files from being imported.</li>
+        <li>Camtasia now prevents import of certain invalid MOV files instead of crashing.</li>
+        <li>Audio-only projects that contain groups now behave like audio-only projects when sharing.</li>
+        <li>Interactivity features (e.g. quizzing and hotspots) are now sent when producing to Video Review.</li>
+        <li>Fixed timing issue that could occur when applying clip speed to media with Visual Effects or Behaviors.</li>
+        <li>Fixed issue that could cause the Powerpoint recording prompt to appear offscreen.</li>
+        <li>Fixed issue that could cause projects with many edits to consume a large amount of RAM and potentially crash.</li>
+        <li>Fixed appearance of Disable Track buttons.</li>
+        <li>Fixed a crash that could occur when using Zoom-n-Pan.</li>
+        <li>Fixed issue that caused Camtasia Editor to lose focus when importing projects.</li>
+        <li>Fixed issue that prevented users from exporting Themes more than once.</li>
+        <li>Fixed issue that caused Fade transitions upgraded from old projects to fade in reverse.</li>
+        </ul>
+        <h3>7 May, 2020: Camtasia (Windows) 2020.0.2</h3>
+        <ul>
+        <li>Fixed bug that caused some pre-2018 projects to upgrade with incorrect Visual FX order.</li>
+        <li>Fixed bug that caused webcam to ignore the selected framerate for recording.</li>
+        <li>Fixed text alignment for right-to-left languages.</li>
+        <li>Fixed bug that caused projects to become unstable when loaded with a missing image.</li>
+        <li>Fixed bug that could lead to corrupt recordings when launching a recording when the webcam was in use.</li>
+        <li>Added EULA for Chinese customers.</li>
+        <li>Fixed crash when trying to get user info for users with multi-byte characters in their username.</li>
+        <li>Fixed crash when importing MOV/MP4 files with multiple codecs.</li>
+        <li>Fixed crash when importing a WAV file with an mp3 extension.</li>
+        <li>Fixed bug that kept text in an edit state after clicking the Undo button.</li>
+        <li>Fixed bug that caused Color Tint presets to keep incorrect easing values.</li>
+        <li>Fixed crash when trying to save to a network drive that is unavailable.</li>
+        </ul>
+        <h3>29 April, 2020: Camtasia (Windows) 2020.0.1</h3>
+        <ul>
+        <li>Added ability to replace timeline media with other media on the timeline.</li>
+        <li>Added ability to export Template file from the Template Manager menu.</li>
+        <li>Set .WAV as the default audio format when exporting audio only.</li>
+        <li>Added ability to set default placeholder media duration in user preferences.</li>
+        <li>Fixed issue that prevented Powerpoint Add-In from working with 32-bit Powerpoint.</li>
+        <li>Fixed crash when adding a Group with media selected to the Library.</li>
+        <li>Fixed crash when selecting undo after replacing audio-only media on the timeline.</li>
+        <li>Fixed a problem that prevented Camtasia from launching when installed by a different user.</li>
+        <li>Stopped video playback before automatic check for invalid licenses.</li>
+        <li>Fixed startup crash experienced by users with double-byte characters in their usernames.</li>
+        </ul>
+        <h3>28 April, 2020: Camtasia (Windows) 2020.0.0</h3>
+        <ul>
+        <li>Added ability to replace timeline media via drag and drop from the Media Bin or Library.</li>
+        <li>Added placeholder media type.</li>
+        <li>Added Template projects.</li>
+        <li>Added Template Manager.</li>
+        <li>Added ability to favorite most frequently used tools and annotations.</li>
+        <li>Added ability to configure and save tool and annotation presets.</li>
+        <li>Added ability to export and share themes individually.</li>
+        <li>Added ability to export and share keyboard shortcuts individually.</li>
+        <li>Added ability to export multiple templates, libraries, themes, shortcuts, presets and favorites as a package.</li>
+        <li>Added Magnetic Track option to Editor.</li>
+        <li>Added Ripple Insert from Media Bin or Library options.</li>
+        <li>Added ability to Ripple Move media on the timeline.</li>
+        <li>Added Ripple Trim option to timeline editing.</li>
+        <li>Added callout styles theme support to Annotations.</li>
+        <li>Added Auto-resize Text toggle button to Properties panel.</li>
+        <li>Added Media Bin layout, filtering, and sorting enhancements.</li>
+        <li>Added Select/Delete Unused Media option to Media Bin.</li>
+        <li>Added Select on Timeline option to Media Bin.</li>
+        <li>Added ability to find and select media in Media Bin to timeline.</li>
+        <li>Added ability to double-click empty space in Media Bin to open media files.</li>
+        <li>Added ability to move playhead on empty timeline.</li>
+        <li>Added ability to detach timeline from Editor.</li>
+        <li>Added Track Matte feature supporting four modes: Alpha, Alpha Invert, Luminosity, and Luminosity Invert.</li>
+        <li>Added high frame rate recording mode to Recorder preferences.</li>
+        <li>Added Reverse Transition toggle button to Properties panel.</li>
+        <li>Added ability to set GIF loop count when exporting animated GIF.</li>
+        <li>Added automatic Group size support.</li>
+        <li>Added ability to set specific Group size.</li>
+        <li>Added ability to set specific Library asset size.</li>
+        <li>Added clipping mask to Group boundary.</li>
+        <li>Refreshed fonts shipped with Camtasia.</li>
+        <li>Added ProRes decoding support.</li>
+        <li>Added support for pitch normalization when Clip Speed is added to media with audio.</li>
+        <li>Added ability to apply multiple visual effects to Groups.</li>
+        <li>Added ability to edit project videos at 25 and 50 frames per second.</li>
+        <li>Added both free and premium templates, themes, and assets to the TechSmith Asset store.</li>
+        <li>Retired support for .camrec recording format.</li>
+        <li>Retired legacy callout display support.</li>
+        <li>Added single stream recording capabilities (audio only, webcam only, screen only) to Recorder.</li>
+        <li>Added system audio VU meter to Recorder.</li>
+        <li>Added ability to record webcams at higher resolutions and frame rates.</li>
+        <li>Added ability to record h.264 video in .TREC container.</li>
+        <li>Added preference to set default animation easing.</li>
+        <li>Retired support for Windows 7.</li>
+        <li>Retired support for Windows 8.</li>
+        <li>Retired converting SWF format to AVI format.</li>
+        <li>Retired support for Camtasia 8 projects.</li>
+        <li>Retired legacy Device Frames.</li>
+        <li>Retired AVI recording support.</li>
+        </ul>
+        </div>
+        </div>
+    <div class="panel-body">
+
+        <ul>
+        <li>Authentication improvements. Users who share to TechSmith web services such as Screencast will be required to sign in again via an updated experience.</li>
+        <li>Fixed bug that could prevent very old recording files from playing back properly.</li>
+        <li>Fixed a startup crash that could occur if a user's file path contained multibyte characters.</li>
+        </ul>
+        <h3>4 November, 2021: Camtasia (Windows) 2019.0.11</h3><h3>10 March, 2020: Camtasia (Windows) 2019.0.10</h3>
+        <div class="text-wrap tlid-copy-target">
+        <ul>
+        <li class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="en"><span class="" title="">Fixed .camrec files were not decoded correctly.</span></span></li>
+        <li><span class="tlid-translation translation" lang="en"><span class="" title="">Fixed crash when importing MP4 files from Android 9 mobile devices</span></span></li>
+        <li><span class="tlid-translation translation" lang="en"><span class="" title="">Fixed Decoding files recorded on LG4 cell phones</span></span></li>
+        <li><span class="tlid-translation translation" lang="en"><span class="" title="">Fixed Issue that caused black frames to appear in web camera videos when encoding to storage media</span></span><span class="tlid-translation-gender-indicator translation-gender-indicator"></span></li>
+        </ul>
+        </div>
+        <h3>21 January, 2020: Camtasia (Windows) 2019.0.9</h3>
+        <ul>
+        <li>Fixed issue that prevented use of Visual Effects for users with non-English characters in their usernames</li>
+        <li>Fixed crash while sharing to Video Review for users with non-English characters in their usernames</li>
+        <li>Fixed issue that caused GPU usage to grow continuously after audio tracks were analyzed</li>
+        <li>Fixed crash when finishing a recording without opening the Camtasia Editor</li>
+        </ul>
+        <h3>26 November, 2019: Camtasia (Windows) 2019.0.8</h3>
+        <ul>
+        <li>Fixed issue that moved Camtasia Editor to the wrong location when restoring the window</li>
+        <li>Added ability to move playhead to a location where no media has been added</li>
+        <li>Fixed a crash that could happen when previewing a transition after previewing a media in the Media Bin</li>
+        <li>Fixed issue to allow sharing to Video Review from outside the United States</li>
+        <li>Added ability to export a zipped project for filenames longer than 260 characters</li>
+        <li>Fixed issue where a duplicate cursor would display after a stitching media</li>
+        <li>Fixed problems with variable-bit-rate MP3 files that could cause skips or glitches</li>
+        <li>Fixed intermittent crash while scrubbing the timeline</li>
+        <li>Fixed crash when extending the beginning of an MP4</li>
+        <li>Added an error message when importing a corrupt .trec file</li>
+        <li>Fixed crash when exporting to MP3</li>
+        <li>Tool menus no longer persist when switching between tools using keyboard shorcuts</li>
+        <li>Fixed issue that caused canvas to resize when dragging media into the Camtasia Editor</li>
+        <li>Fixed issue issue for incorrect display of location to drag media</li>
+        <li>Fixed issue exporting images to the JPEG format</li>
+        <li>Fixed issue that caused animations to shift when unstitching media</li>
+        <li>Fixed issue with location of the canvas when it has been detached</li>
+        <li>Fixed crash while editing annotations set to extremely large scales</li>
+        </ul>
+        <h3>27 August, 2019: Camtasia (Windows) 2019.0.7</h3>
+        <ul>
+        <li>Fixed an issue that caused delays in timeline edits for stitched media</li>
+        <li>Fixed crash when loading projects with missing TREC files</li>
+        <li>Updated Screencast.com to use the latest TechSmith Account integration</li>
+        <li>SCORM 2004 editions are now listed in SCORM options</li>
+        <li>Added option for Enterprise users to disable quizzing in the TechSmith Deployment Tool</li>
+        </ul>
+        <h3>15 August, 2019: Camtasia (Windows) 2019.0.6</h3>
+        <ul>
+        <li>Fixed issue where context menu options are missing for annotations</li>
+        <li>Fixed issue where some PDF files rendered with incorrect colors</li>
+        <li>Updated XPDF library to version 4.01 to address the following CVEs where a user may have been vulnerable to a denial of service attack (crash or hang) when importing a PDF file CVE-2018-7173 CVE-2018-7174 CVE-2018-7175 CVE-2018-7452 CVE-2018-7454 CVE-2018-11033 CVE-2018-16368 CVE-2018-18651</li>
+        </ul>
+        <h3>8 August, 2019: Camtasia (Windows) 2019.0.5</h3>
+        <ul>
+        <li>Camtasia now displays single user license keys during login</li>
+        <li>Select webcams in the Recorder identified as USB Video Devices in Device Manager</li>
+        <li>Fixed bug that causes imported MP4s loudness calculation to hang</li>
+        <li>Fixed a bug that prevented Camtasia from exporting for Mac</li>
+        </ul>
+        <h3>30 July, 2019: Camtasia (Windows) 2019.0.4</h3>
+        <ul>
+        <li>Fixed crash when audio files are analyzed for Noise Removal</li>
+        <li>Fixed issue where invalid error dialog is shown when loading certain media</li>
+        <li>Fixed Camtasia Recorder crash when holding down F9</li>
+        <li>Fixed issue where Voice Narration m4a files contain faulty timing information</li>
+        <li>Added recipient single email address validation in Quiz reporting options</li>
+        <li>Fixed issue where theme fonts are not shown until Theme Manager opens</li>
+        <li>Fixed issue where TechSmith Assets are not downloaded when asset name exceeds character limit</li>
+        <li>Fixed crash when media is dragged to timeline</li>
+        <li>Fixed issue where imported zipped projects do not open in Camtasia</li>
+        <li>Thumbnails are now shown correctly on timeline for .trec and .camrec files</li>
+        <li>Fixed issue where Windows 7 users are shown invalid warning dialog on startup</li>
+        <li>Improved performance between Camtasia and newest Smart Player version</li>
+        </ul>
+        <h3>26 June, 2019: Camtasia (Windows) 2019.0.3</h3>
+        <ul>
+        <li>Added support for Chinese language</li>
+        <li>Fixed an issue where rare low-motion animated GIFs could cause Camtasia to crash</li>
+        <li>Fixed an issue where some 60fps media did not trigger a prompt to change the project's framerate</li>
+        <li>Fixed an issue that caused users to be logged out of Camtasia after upgrading</li>
+        <li>Fixed an issue that could cause colors to appear "washed out" when using hardware acceleration</li>
+        <li>Added an animation when media are added to the Media Bin</li>
+        </ul>
+        <h3>29 May, 2019: Camtasia (Windows) 2019.0.2</h3>
+        <ul>
+        <li>Fixed issue where m4a playback would not start until the entire file was downloaded</li>
+        <li>Fixed issue where changes to Voice Narration text could be lost if they were the last thing changed before closing the application</li>
+        <li>Fixed issue that could cause some characters to render incorrectly in text annotations</li>
+        <li>Fixed issue that caused 16-bit .camrec files to render incorrectly</li>
+        <li>Fixed problem rendering changes to Opacity when media are in a Group</li>
+        <li>Fixed hang when closing the application after playing audio files with corrupt metadata</li>
+        <li>Fixed issue where LUFS calculation could never be completed on audio files with corrupt metadata</li>
+        <li>Fixed startup crash that occurred when the Windows username contained double-byte characters when the system locale was Japanese</li>
+        </ul>
+        <h3>7 May, 2019: Camtasia (Windows) 2019.0.1</h3>
+        <ul>
+        <li>Fixed issue that prevented selecting the last line of a callout using Shift-DownArrow</li>
+        <li>Fixed issue that caused user's editing cursor to get stuck in callouts when font size changed</li>
+        <li>Fixed issue that could prevent waveform rendering when using a stitch in conjunction with clip speed</li>
+        <li>Spacebar now always plays or pauses playback, and ignores the currently focused button</li>
+        <li>Improved support for respecting users' machine language settings regarding numbers on the Properties panel</li>
+        <li>Update mp4v2 resolving: CVE-2018-14054, CVE-2018-14325, CVE-2018-14326, CVE-2018-14379, CVE-2018-14403, CVE-2018-14446</li>
+        <li>Changes to track height are now saved with the project</li>
+        <li>Fixed issue that could cause unwanted changes to effect timings when stitching and unstitching media</li>
+        <li>Fixed issue that caused a crash when importing very old camrec files</li>
+        <li>Fixed issue that caused animated GIF files to only show the first frame during Media Bin preview</li>
+        <li>Improved snapping behavior when trimming multiple media at once</li>
+        </ul>
+        <h3>30 April, 2019: Camtasia (Windows) 2019.0.0</h3>
+        <ul>
+        <li>Added ability to automatically adjust audio levels with defined Loudness Units Full Scale (LUFS) normalization.</li>
+        <li>Added new mouse cursor effect to smooth out cursor movements.</li>
+        <li>Expanded number of customizable product hotkeys and shortcuts.</li>
+        <li>Added new Block Text style for annotations.</li>
+        <li>Added properties to adjust vertical and horizontal text spacing in annotations.</li>
+        <li>Added Whip Spin transition .</li>
+        <li>Add ability to include logos and images to Themes.</li>
+        <li>Added additional device frames for download in TechSmith Assets.</li>
+        <li>Added “Open in Camtasia” option for TechSmith Asset downloads.</li>
+        <li>Improved SmartFocus functionality.</li>
+        <li>Updated Canvas preset sizes to match more modern devices and platforms.</li>
+        <li>Added support for importing and using PDF files.</li>
+        <li>Fixed an issue that could cause the Camtasia Recorder to record a black frame at the beginning of recording.</li>
+        <li>Fixed an issue preventing H.263-encoded mp4s from playing back properly.</li>
+        <li>Fixed a problem that impacted editing performance on systems with Intel Integrated graphics processors when scaling down large images.</li>
+        <li>Fixed a problem that impacted editing performance on systems with Intel Integrated graphics processors when applying Behaviors to text callouts.</li>
+        <li>Fixed a crash that could occur while editing a clip with both a stitch and the clip speed effect applied.</li>
+        <li>Fixed an issue that could cause audio clips to seek incorrectly across splits.</li>
+        <li>Retired FTP output.</li>
+        <li>Retired ability to add new Legacy Callouts to a project.</li>
+        <li>Update mp4v2 resolving: CVE-2018-14054, CVE-2018-14325, CVE-2018-14326, CVE-2018-14379, CVE-2018-14403, CVE-2018-14446.</li>
+        </ul>
+        </div>
+    <div class="panel-body">
+        <h3>7 May, 2019: Camtasia (Windows) 2018.0.8</h3>
+        <ul>
+        <li>Fixed an issue that could cause the Camtasia Recorder to record a black frame at the beginning of recording</li>
+        <li>Fixed an issue preventing H.263-encoded mp4s from playing back properly</li>
+        <li>Fixed a problem that impacted editing performance on systems with Intel Integrated graphics processors when applying Behaviors to text callouts</li>
+        <li>Update mp4v2 resolving: CVE-2018-14054, CVE-2018-14325, CVE-2018-14326, CVE-2018-14379, CVE-2018-14403, CVE-2018-14446</li>
+        <li>Added option to share to TechSmith Video Review in Camtasia Editor</li>
+        </ul>
+        <h3>14 November, 2018: Camtasia (Windows) 2018.0.7</h3>
+        <ul>
+        <li>Fixed a crash on startup that could occur for users that had previously entered Video Info metadata in the production wizard.</li>
+        <li>Fixed a problem that could prevent captions and/or hotspots from working properly in Smart Player productions</li>
+        </ul>
+        <h3>6 November, 2018: Camtasia (Windows) 2018.0.6</h3>
+        <ul>
+        <li>Fixed a bug that prevented some legacy .camrec files from loading, playing, and/or producing properly.</li>
+        <li>Added support to resume a SCORM e-learning lesson with the TechSmith Smart Player. Users will be able to resume the video at the time they exited the video.</li>
+        <li>Added capability to Reset Camtasia to Factory Defaults from the Preferences menu.</li>
+        <li>Fixed a bug that caused thumbnails to appear black when Markers were applied to stitched media.</li>
+        <li>Ctrl-Shift-V now stops a Voice Narration recording as it should.</li>
+        <li>Ctrl-Alt-Shift-ArrowKey hotkey now works as expected when media are selected.</li>
+        <li>The ENTER keystroke callout now displays ENTER instead of RETURN.</li>
+        <li>Optimized video output to Screencast.com to reduce buffering for viewers.</li>
+        <li>Fixed a bug that caused the file extension to be shown twice when saving a project on a German OS.</li>
+        <li>Fixed a bug that prevented production when the project filename was too long.</li>
+        <li>Fixed a crash that could happen when adjusting Noise Removal settings.</li>
+        <li>Adjusted YouTube settings to address an issue that could make the YouTube sharing output unavailable for some users.</li>
+        </ul>
+        <h3>11 October, 2018: Camtasia (Windows) 2018.0.5</h3>
+        <ul>
+        <li>Fixed a bug that prevented playback on systems where the default audio device did not support stereo playback.</li>
+        </ul>
+        <h3>18 September, 2018: Camtasia (Windows) 2018.0.4</h3>
+        <ul>
+        <li>Added support for French language.</li>
+        <li>Added a preview of theme colors to the Theme Manager window.</li>
+        <li>Updated SmartPlayer to version 5.17.1.</li>
+        <li>iTunes Information tab removed from the production wizard.</li>
+        <li>Cursor clicks now render correctly at any DPI.</li>
+        <li>Non-English characters render correctly for legacy-style callouts.</li>
+        <li>Fixed import/upgrade of Camtasia 9.x libraries with asset names containing non-English .</li>
+        characters
+        <li>Automatically-named recordings numbered above 10 are now ordered correctly on the timeline.</li>
+        <li>MOV files recorded on iPhone 6 phones now render correctly in software-only rendering mode.</li>
+        <li>Fixed a crash when trying to change the cursor for certain features on the timeline.</li>
+        <li>Fixed a bug that prevented updating media with images using a .jpeg extension.</li>
+        <li>Fixed a bug that caused captions to display off-center in video productions.</li>
+        <li>Fixed a bug that caused productions to hang when producing to multiple files using markers.</li>
+        <li>Animated GIFs with large dimensions now display correctly.</li>
+        <li>Fixed a bug that caused the Recent Projects window to clear out prematurely.</li>
+        <li>Fixed a bug that caused videos with non-square pixels to appear squashed.</li>
+        <li>Fixed a bug that caused callout text to render inconsistently when flipped along its Y-axis.</li>
+        <li>Fixed a bug that caused an error dialog when editing library assets.</li>
+        </ul>
+        <h3>28 August, 2018: Camtasia (Windows) 2018.0.3</h3>
+        <ul>
+        <li>Bug fixes and improvements.</li>
+        </ul>
+        <h3>14 August, 2018: Camtasia (Windows) 2018.0.2</h3>
+        <ul>
+        <li>Improved support for operating systems that use commas as the decimal mark.</li>
+        <li>Updated SmartPlayer to version 5.15.2.</li>
+        <li>Fixed other security bugs.</li>
+        </ul>
+        <h3>16 July, 2018: Camtasia (Windows) 2018.0.1</h3>
+        <ul>
+        <li>Fixed bugs with library upgrading.</li>
+        <li>Fixed bugs with libzip importing.</li>
+        <li>Fixed bugs with MP4 and MOV performance.</li>
+        <li>Fixed a bug with delete files selection in Deployment Tool.</li>
+        <li>Fixed a bug with Deployment Tool not using language selection.</li>
+        <li>Fixed a crash when audio placed on 60 fps timeline.</li>
+        <li>Fixed a crash when dragging an unsaved GIF from Snagit to Camtasia.</li>
+        <li>Fixed a crash when applying noise removal to certain MP3s.</li>
+        <li>Fixed a crash when applying clip speed to audio.</li>
+        <li>Other bug fixes and improvements.</li>
+        </ul>
+        <h3>19 June, 2018: Camtasia (Windows) 2018.0.0</h3>
+        <ul>
+        <li>New Library - Save frequently used assets, effects, and media.</li>
+        <li>Theming - Create themes with colors and fonts and apply to assets and effects.</li>
+        <li>Additional customizable and stock video assets.</li>
+        <li>60 fps video import, editing, and production.</li>
+        <li>Editor performance improvements for preview playback and timeline edits.</li>
+        <li>Production engine improvements for faster export.</li>
+        <li>New Behaviors (Explode and Fly In).</li>
+        <li>Fixed crash when SCORM selected with production preset.</li>
+        <li>Fixed clip speed not working with decimals in German.</li>
+        <li>Fixed incorrect color when annotation saved to library.</li>
+        <li>Fixed issue with parsing file names for batch production.</li>
+        <li>Other Bug fixes and improvements.</li>
+        </ul>
+        </div>
+    <div class="panel-body">
+        <h3>7 May, 2019: Camtasia (Windows) 9.1.5</h3>
+        <ul>
+        <li>Update mp4v2 resolving: CVE-2018-14054, CVE-2018-14325, CVE-2018-14326, CVE-2018-14379, CVE-2018-14403, CVE-2018-14446</li>
+        </ul>
+        <h3>14 August, 2018: Camtasia (Windows) 9.1.4</h3>
+        <ul>
+        <li>Fixed other security bugs.</li>
+        </ul>
+        <h3>13 March, 2018: Camtasia (Windows) 9.1.2</h3>
+        <ul>
+        <li>Improvements to color contrasts in user interface to increase legibility and reduce fatigue.</li>
+        <li>Added banner messaging in-product for reaching users with timely and relevant information.</li>
+        <li>Fixed issue where viewer could not enter a jump-to-time in quiz feedback.</li>
+        <li>Fixed issue where jump-to-marker was not displaying a list of markers in quiz feedback.</li>
+        <li>Other bug fixes and improvements.</li>
+        </ul>
+        <h3>16 November, 2017: Camtasia (Windows) 9.1.1</h3>
+        <ul>
+        <li>Improved rendering performance with behaviors.</li>
+        <li>Fixed a bug with Camtasia crashing when trying to import PowerPoint files.</li>
+        <li>Fixed a bug with media being selected out of view on the timeline.</li>
+        <li>Fixed a bug where the Recorder preview shows a white screen.</li>
+        <li>Fixed a bug where tracks could be missing after upgrade to 9.1.0.</li>
+        <li>Fixed a bug with pausing during sync captions.</li>
+        <li>Fixed a bug where horizontal scroll could cause a crash.</li>
+        <li>Fixed a crash using Annotations after installing to a folder with double byte characters.</li>
+        <li>Other bug fixes and improvements.</li>
+        </ul>
+        <h3>19 September, 2017: Camtasia (Windows) 9.1.0</h3>
+        <ul>
+        <li>Made improvements to the TechSmith Smart Player</li>
+        <li>New device frame visual effect to make videos more engaging</li>
+        <li>New properties panel to quickly adjust colors and text of animated graphics, like intros and lower thirds</li>
+        <li>New extend frame functionality to make extending your clips more intuitive</li>
+        <li>New functionality to import PowerPoint files</li>
+        <li>Addressed an issue where recordings would show as only one frame long on timeline incorrectly</li>
+        <li>Handling finding offline media on users' computer in a smoother way</li>
+        <li>Fixed a bug where batch production without subfolders option selected would still create subfolders</li>
+        <li>Fixed a bug where production dialog hangs with multiple files based on markers selected</li>
+        <li>Fixed AVI production for non TechSmith codecs</li>
+        <li>Fixed a bug where sometimes scrolling through the font dropdown caused a crash</li>
+        <li>Fixed a bug where media bin and canvas would end up being hidden on startup</li>
+        <li>Fixed a bug where dragging transitions on media that is split caused a hang</li>
+        <li>Fixed a bug where audio only TRECs caused a crash</li>
+        <li>Other bug fixes and improvements</li>
+        </ul>
+        <h3>16 May, 2017: Camtasia (Windows) 9.0.5</h3>
+        <ul>
+        <li>Fix a crash when loading a project from an older version of Camtasia</li>
+        <li>Fix a crash when loading invalid JPEG files</li>
+        <li>Fix a preview thumbnail generation issue</li>
+        </ul>
+        <h3>18 April, 2017: Camtasia (Windows) 9.0.4</h3>
+        <ul>
+        <li>Added a display of playhead time and project duration</li>
+        <li>Added support for media with PNG codec to allow MOV files with transparency</li>
+        <li>Addressed an issue with YouTube sign in due to Google’s change to OAuth support</li>
+        <li>Addressed an issue where a color picker would not accept RGB values while editing a callout</li>
+        <li>Addressed an issue where OTF custom font types were unusable</li>
+        <li>Addressed an issue where unnecessary meta data files were created during production</li>
+        <li>Addressed an issue with subfolder creation during production</li>
+        <li>Improvements to trial and registration windows</li>
+        <li>Removed OneDrive and O365 SharePoint sharing destinations (known as ‘My Places’) due to security vulnerability</li>
+        <li>Other bug fixes and improvements</li>
+        </ul>
+        <h3>31 January, 2017: Camtasia (Windows) 9.0.3</h3>
+        <ul>
+        <li>Made improvements to the TechSmith Smart Player</li>
+        <li>Addressed an intermittent hang when analyzing audio files</li>
+        <li>Addressed an issue causing a crash when choosing a font from a drop down menu</li>
+        <li>Addressed an issue where users were unable to stop voice narration</li>
+        <li>Addressed an issue where uploading to YouTube included closed captions and burned in captions</li>
+        <li>Addressed an issue where right to left language fonts disappear when adding a behavior</li>
+        <li>Other bug fixes and improvements</li>
+        </ul>
+        <h3>15 November, 2016: Camtasia (Windows) 9.0.1</h3>
+        <ul>
+        <li>Made improvements to the TechSmith Smart Player</li>
+        <li>Addressed issues with Vorbis audio codec causing crashes</li>
+        <li>Addressed some issues that can cause a crash on startup</li>
+        <li>Addressed a problem where the Properties panel would fail to show an object’s current values</li>
+        <li>Other bug fixes and improvements</li>
+        </ul>
+        <h3>11 October, 2016: Camtasia (Windows) 9.0.0</h3>
+        <ul>
+        <li>New Behaviors as way to quickly animate images, video, or text</li>
+        <li>New callouts</li>
+        <li>New captions workflow</li>
+        <li>New 64-bit engine for faster editing and encoding</li>
+        <li>New default assets in asset library</li>
+        <li>Drag and drop assets, effects, and more right to canvas</li>
+        <li>Canvas editing</li>
+        <li>Ability to share projects with Mac</li>
+        <li>Color adjustments (brightness, contrast, saturation)</li>
+        <li>Voice narration improvements</li>
+        <li>Quizzing improvements</li>
+        <li>Quizzing per question feedback</li>
+        <li>Animated GIF support</li>
+        <li>UI updates (more similarities with Mac)</li>
+        </ul>
+        </div>
+    <h2>Techsmith Camtasia : Features</h2>
+    <li>Animation</li>
+    <li>Annotations</li>
+    <li>Audio Capture</li>
+    <li>Collaboration Tools</li>
+    <li>Content Management</li>
+    <li>Customizable Branding</li>
+    <li>Customizable Templates</li>
+    <li>Drag & Drop</li>
+    <li>File Sharing</li>
+    <li>Interactive Content</li>
+    <li>Media Library</li>
+    <li>Multi-Screen Recording</li>
+    <li>On-Demand Recording</li>
+    <li>Privacy Options</li>
+    <li>Screen Capture</li>
+    <li>Screen Recording</li>
+    <li>Social Sharing</li>
+    <li>Templates</li>
+    <li>Text Overlay</li>
+    <li>Video Call Recording</li>
+    <li>Text to Video</li>
+    <li>Video Capture</li>
+    <li>Video Creation</li>
+    <li>Video Editing</li>
+    <li>Video Management</li>
+    <li>Video Streaming</li>
+    <li>Video Support</li>
+    <li>Voice-Over / Audio</li>
+    <li>YouTube Uploading</li>
+
+</body>
+</html>
