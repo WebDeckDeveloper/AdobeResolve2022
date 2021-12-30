@@ -46,3 +46,8 @@
     color: rgb(255, 0, 55);
     list-style-type: none;
 }
+
+.hf {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255,165,0);
+}
