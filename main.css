@@ -27,6 +27,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.softwarelist a:hover {
+    font-style: oblique;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .filmora {
     color: darkblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -36,6 +42,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: darkred;
     list-style-type: none;
+}
+
+.creditlist a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkred;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .camtasia {
